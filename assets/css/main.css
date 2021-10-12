@@ -1,0 +1,33 @@
+body {
+	font-family: calibri;
+	margin: auto;
+}
+
+table {
+	background-color: White;
+	font-size: 12px;
+	margin: auto;
+	width: 90%;
+}
+
+caption {
+	font-size: 22px;
+	font-weight: bold;
+	text-align: left;
+}
+
+img {
+	margin: auto;
+}
+
+#lineas, #montos {
+	margin-top: 25px;
+}
+
+#lineas th, #montos th {
+	border-bottom: 1px solid black;
+}
+
+.blue {
+	color: #5da3e6;
+}

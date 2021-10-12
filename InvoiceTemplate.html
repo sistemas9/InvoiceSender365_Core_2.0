@@ -1,0 +1,222 @@
+﻿<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+</head>
+<body style="margin: auto;">
+  <table style="width:100%;" border="0">
+    <tbody>
+      <tr>
+        <th style="width:15%; font-size:10px; text-align:center">
+          <img src="img/logo.png" alt="" width="100" height="100" />
+        </th>
+        <th style="width:100%;">
+          <table style="width: 100%;font-size: 11px;" border="0">
+            <tbody>
+              <tr>
+                <td colspan="2" align="center" style="width:50%; vertical-align:top;">
+                  <h4 style="font-family:Helvetica; font-size:14px; margin-bottom:10px;">{NombreCompany}</h4>
+                  <b>R.F.C. {RfcCompany}</b>
+                </td>
+              </tr>
+              <tr>
+                <td align="left">
+                  <table border="0" style="width: 100%; font-size: 10px; font-weight: normal; margin: 10px 5px 1px 5px; padding: 0;">
+                    <tbody>
+                      <tr style="margin: 10px 5px 1px 5px; padding: 0;">
+                        <td colspan="2">Matriz: {DireccionCompany1}</td>
+                      </tr>
+                      <tr style="margin: 10px 5px 1px 5px; padding: 0;">
+                        <td colspan="2">{DireccionCompany0} No 3701 Int 48-H</td>
+                      </tr>
+                      <tr style="margin: 10px 5px 1px 5px; padding: 0;">
+                        <td colspan="2">
+                          {DireccionCompany2}
+                          <br />
+                          {UrlCompany}<br />
+                          {TelefonoCompany}<br />
+                          Régimen Fiscal: Persona Moral General de Ley
+                        </td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </td>
+                <td align="right" style="text-align:right;">
+                  <table border="0" style="font-size: 10px; width: 100%; margin: 10px 5px 1px 5px; padding: 0; text-align:left">
+                    <tbody>
+                      <tr style="margin: 10px 5px 1px 5px; padding: 0;">
+                        <td colspan="2" style="font-size:12px;">
+                          <b>FACTURA N° {Factura}</b>
+                        </td>
+                      </tr>
+                      <tr style="margin: 10px 5px 1px 5px; padding: 0;">
+                        <td colspan="2" style="font-size:10px; font-weight:normal;">
+                          UUID:  {UUID}
+                        </td>
+                      </tr>
+                      <tr style="margin: 10px 5px 1px 5px; padding: 0;">
+                        <td colspan="2" style="font-size:10px; font-weight:normal;">Fecha de Factura: {FechaFactura}</td>
+                      </tr>
+                      <tr style="margin: 10px 5px 1px 5px; padding: 0;">
+                        <td colspan="2" style="font-size:10px; font-weight:normal;">Fecha expiración: {FechaExpiracion}</td>
+                      </tr>
+                      <tr style="margin: 10px 5px 1px 5px; padding: 0;">
+                        <td colspan="2" style="font-size:10px; font-weight:normal;">Plazo: {Plazo}</td>
+                      </tr>
+                      <tr style="margin: 10px 5px 1px 5px; padding: 0;">
+                        <td colspan="2" style="font-size:10px; font-weight:normal;">
+                          Lugar de Expedición:
+
+                          {BranchOfficeAddres}
+
+                        </td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </th>
+      </tr>
+    </tbody>
+  </table>
+
+  <table style="font-size:10px; width:100%;" border="0">
+    <tr>
+      <td align="left" style="width:40%;vertical-align:top;">
+        Cliente: {ClienteCompleto} <br/>
+        {CalleCliente} <br/>
+        {ColoniaCliente} <br/>
+        {CiudadCliente} <br/>
+        {ZipCodeCliente} <br/>
+        RFC: {RfcCliente} / TEL: {TelCliente}
+      </td>
+      <td align="left" style="width:20%;vertical-align:top;">
+        <table style="font-size:10px; margin:0px; vertical-align:top;" border="0">
+          <tr><td>Método de Pago:</td><td> {MetodoPago}</td></tr>
+          <tr><td class="tipoEntrega">Tipo de entrega:</td><td> {DeliveryModeCode}</td></tr>
+          <tr><td class="tipoPago">Forma de Pago:</td><td> {FormaPago}</td></tr>
+          <tr><td>Uso de CFDI:</td><td>{UsoCFDI}</td></tr>
+          <tr><td>Tipo:</td><td>{TipoDeComprobante}</td></tr>
+        </table>
+      </td>
+      <td align="left" style="width:40%;">
+        Dirección de entrega:<br />
+        {CalleCliente} <br />
+        {ColoniaCliente} <br />
+        {CiudadCliente} <br />
+        {ZipCodeCliente} <br />
+        Referencia:<br />
+        {ReferenciaCliente}<br />
+      </td>
+    </tr>
+    <tr>
+      <td colspan="2" style="vertical-align:top; text-align:left;">
+        Empleado de ventas: {Vendedor}
+      </td>
+      <td style="vertical-align:top; text-align:left;">
+        <small>Tipo de cambio del {FechaFactura} es {ExchangeRate} MXN pesos por USD</small>
+      </td>
+    </tr>
+  </table>
+  {TablaArticulos}
+  <table style="width:100%;" border="0">
+    <tr>
+      <td style="width:25%;">
+        {RawData}
+      </td>
+      <td>
+        <table class="pac" style="margin-bottom:0px">
+          <tr>
+            <td colspan="4" style="font-size:8px; word-wrap:break-word;width:100%;">
+              <p style="text-align:left;margin:0px; font-weight:bold;">Sello Digital del CFDI:  </p>{SelloDigitalCFDI}<br/>
+            </td>
+          </tr>
+          <tr>
+            <td colspan="4" style="font-size:8px; word-wrap:break-word;width:100%;">
+              <p style="text-align:left;margin:0px; font-weight: bold;">Sello digital del SAT: </p>{SelloDigitalSAT}<br/>
+            </td>
+          </tr>
+          <tr>
+            <td colspan="4" style="font-size:8px; word-wrap:break-word;width:100%;">
+              <p style="text-align:left;margin:0px; font-weight: bold;">Cadena original: </p>{CadenaOriginal}<br/>
+            </td>
+          </tr>
+          <tr>
+            <th style="width: 38%; font-size: 9px;" align="left">No. Certificado</th>
+            <th style="width: 22%; font-size: 9px;" align="left">Certificado del SAT</th>
+            <th style="width: 15%; font-size: 9px;" align="left">RFC PAC </th>
+            <th style="width: 25%; font-size: 9px;" align="left">Fecha de Timbrado</th>
+          </tr>
+          <tr>
+            <td style="font-size:9px;" align="left">{NumCertificado}</td>
+            <td style="font-size:9px;" align="left">{NumCertificadoSat}</td>
+            <td style="font-size:9px;" align="left">{RfcPAC}</td>
+            <td style="font-size:9px;" align="left">{FechaTimbrado}</td>
+          </tr>
+        </table>
+      </td>
+    </tr>
+  </table>
+  <p style="font-size:9px;">
+    Este documento es una representación impresa de un CFDI versión 3.3 | EN MATERIAL CORTADO NO HABRÁ DEVOLUCIONES NI CAMBIOS | TODA DEVOLUCIÓN CAUSARÁ 20%
+  </p>
+  <table style="font-size:9px; width:100%;" border="0">
+    <tr>
+      <td style="text-align:left">
+        Favor de validar sus datos fiscales, solo se realizaran re facturaciones dentro o del mismo mes
+      </td>
+      <td style="text-align:right">
+        Bueno por: {BuenoPor}
+      </td>
+    </tr>
+    <tr>
+      <td style="text-align: justify;" colspan="2">
+        <p>
+          Por este pagare me comprometo y obligo a pagar incondicionalmente a la orden de Avance y Tecnología en Plásticos S.A de C.V, en esta ciudad de Chihuahua, Chihuahua el día {PagareFecha} la cantidad de {PagareMonto} ({PagareMontoLetras})  valor recibido a mi entera satisfacción.<br/>
+          Este pagare forma parte de una serie numerado del 1 al 1 y todos estan sujetos a las condiciones de que, al no pagarse cualquiera cualquiera de ellos a su sencimiento serán exigibles, todos los que sigan en número,
+          además de los ya vencidos desde la fecha de vencimiento de este documento hasta el día de su liquidación, causará interes monetario a razón de a tasa del 7% mensual pagadero en esta ciudad juntamente
+          con el principal
+        </p>
+        <p style="text-align:center;">
+          Datos de contacto
+        </p>
+      </td>
+    </tr>
+  </table>
+  <table style="font-size:9px; width:100%;" border="0">
+    <tbody>
+      <tr style="margin: 10px 5px 1px 5px; padding: 0;">
+        <td>
+          <table style="font-size: 9px; width: 100%; margin:10px 5px 1px 5px; padding: 0px;" border="0">
+            <tbody>
+              <tr>
+                <td>Datos del Deudor:</td>
+              </tr>
+              <tr>
+                <td>{DeudorNombre}</td>
+              </tr>
+              <tr>
+                <td>{CalleCliente}</td>
+              </tr>
+              <tr>
+                <td>{ColoniaCliente}</td>
+              </tr>
+              <tr>
+                <td>{CiudadCliente} {ZipCodeCliente}</td>
+              </tr>
+            </tbody>
+          </table> 
+        </td>
+        <td>
+          Acepto(amos): <br />
+          <br /><br /><img src="{PathImgFirma}" alt="" style="width: 70px;"/>
+          <br/>_____________________________<br />
+          Nombre y firma <br />
+        </td>
+      </tr>
+    </tbody>
+  </table>
+</body>
+</html>

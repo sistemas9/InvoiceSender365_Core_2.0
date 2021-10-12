@@ -1,0 +1,103 @@
+* {
+	margin: 10px 5px 1px 5px;
+	padding: 0;
+}
+body {
+	font-family: helvetica;
+}
+
+table {
+	background-color: White;
+	font-size: 12px;
+	/*margin: auto;*/
+	/*page-break-inside: auto;*/
+}
+
+caption {
+	font-size: 15px;
+	font-weight: bold;
+	text-align: left;
+}
+
+img {
+	margin-bottom: 20px;
+}
+
+td {
+	vertical-align: top;
+}
+
+h3 {
+	border: 2px solid black;
+	width: 70%;
+}
+
+#header {
+	width:100%;
+}
+
+#header #logo {
+	text-align:center;
+	width:15%; 
+}
+
+#invoiceInfo {
+	font-size:11px;
+	width:100%;
+}
+
+#invoiceInfo td {
+	text-align:center; 
+	width:50%;
+}
+
+#invoiceInfo td div {
+	/*text-align:left;*/
+}
+
+
+
+.pac {
+	border: 2px solid White;
+	font-size:9px;
+}
+
+.line {
+	background-color: Black;
+	height: 1px;
+}
+
+.ws {
+	background-color: MistyRose;
+}
+
+@page { margin: 180px 50px; }
+
+footer {
+	background-color: salmon;
+	bottom: 0px;
+	height: 420px;
+	left: 0px;
+	position: fixed;
+	right: 0px;
+}
+
+header {
+	background-color: White;
+	height: 170px;
+	left: 0px;
+	position: fixed;
+	right: 0px;
+	text-align: center;
+	top: 0px;
+}
+
+footer .page:after { content: counter(page, upper-roman); }
+
+ul {
+	list-style: none;
+}
+
+li {
+	margin:0px;
+}

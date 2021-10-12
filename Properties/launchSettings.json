@@ -1,0 +1,10 @@
+﻿{
+  "profiles": {
+    "InvoiceSender365_Core_2._0": {
+      "commandName": "Project",
+      "environmentVariables": {
+        "DOTNET_ENVIRONMENT": "Development"
+      }
+    }
+  }
+}
